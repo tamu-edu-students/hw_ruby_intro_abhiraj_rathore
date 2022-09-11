@@ -89,14 +89,14 @@ end
 
 # Object representing a book
 class BookInStock
-	def initialize(isbn,price)
-		@isbn = isbn
-		@price = price
-		if price<=0 || isbn.size == 0
-			raise ArgumentError
-		end
-	end
-	def isbn
+  def initialize(isbn,price)
+    @isbn = isbn
+    @price = price
+    if price<=0 || isbn.size == 0
+      raise ArgumentError
+    end
+  end
+  def isbn
     @isbn
   end
   def price
